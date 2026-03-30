@@ -24,7 +24,12 @@ Users should be able to:
 - See hover states for interactive elements
 
 ### Screenshot
-- Live Site URL:
+- Dextop View
+![3-column-preview-card-component](./Screenshot/Dextop_View.png)
+- Mobile View
+![3-column-preview-card-component](./Screenshot/Mobile_View.png)
+### Links
+- Live Site URL: https://soumiligiri.github.io/3-column-preview-card-component/
 
 ## My process
 
