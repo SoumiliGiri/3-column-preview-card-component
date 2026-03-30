@@ -1,0 +1,151 @@
+/* lexend-deca-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./Fonts/lexend-deca-v25-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* big-shoulders-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Big Shoulders';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./Fonts/big-shoulders-v4-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    min-height: 100%;
+    width: 100%;
+    font-family: Lexend Deca;
+    font-size: 0.9rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    margin-inline: 1.5rem;
+    margin-block: 5rem;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;   
+}
+
+.orange{
+    min-height: 23rem;
+    width: auto;
+    background: hsl(31, 77%, 52%);
+    padding: 2.5rem;
+    border-radius: 7px 7px 0 0;
+}
+
+.blue{
+    min-height: 23rem;
+    width: auto;
+    background: hsl(184, 100%, 22%);
+    padding: 2.5rem;
+}
+
+.green{
+    min-height: 23rem;
+    width: auto;
+    background: hsl(179, 100%, 13%);
+    padding: 2.5rem;
+    border-radius: 0 0 7px 7px;
+}
+
+h1{
+    font-family: Big Shoulders;
+    color: hsl(0, 0%, 95%);
+    font-size: 2.6rem;
+    margin: 25px;
+    margin-left: 0;
+}
+
+p{
+    margin: 15px;
+    margin-left: 0;
+    margin-bottom: 25px;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 30px;
+}
+
+button{
+    border: solid;
+    border-color: hsl(0, 0%, 95%); 
+    width: 10rem;
+    height: 3rem;
+    border-radius: 30px;
+}
+
+#o{
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(31, 77%, 52%);
+}
+
+#o:hover{
+    background: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    border-color: white;
+}
+
+#b{
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(184, 100%, 22%);
+}
+
+#b:hover{
+    background: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    border-color: white;
+}
+
+#g{
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(179, 100%, 13%);
+}
+
+#g:hover{
+    background: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    border-color: white;
+}
+
+@media(width > 757px){
+    html, body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .card{
+        margin:  4rem 1rem;
+        display: flex;
+        flex-direction: row;
+        max-width: 50rem;
+        height: auto;
+    }
+
+    .orange{
+    border-radius: 7px 0px 0px 7px;
+    }
+
+    .green{
+        border-radius: 0 7px 7px 0;
+    }
+
+    p{
+        font-size: 0.7rem;
+        line-height: 25px;
+        margin-bottom: 4rem;
+    }
+
+}
